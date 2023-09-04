@@ -7,6 +7,8 @@ const citySchema = Schema(
     country: { type: String, require: true },
     population: { type: String, require: true },
     description: { type: String, require: true },
+    itinerary: [{type: Schema.Types.ObjectId, ref: 'Itinerary'}]
+    
   },
   {
     timestamps: true,
