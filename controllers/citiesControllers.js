@@ -1,4 +1,3 @@
-import cities from "../cities.js";
 import City from "../model/City.js";
 
 const citiesControllers = {
@@ -54,7 +53,7 @@ const citiesControllers = {
     }
   },
 
-  updateOneCiy: async (request, response, next) => {
+  updateOneCity: async (request, response, next) => {
     const { id } = request.params;
     console.log(id);
     let city;
@@ -94,6 +93,7 @@ const citiesControllers = {
       next(err);
     }
   },
+
 };
 
 export default citiesControllers;
